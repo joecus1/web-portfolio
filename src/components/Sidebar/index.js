@@ -1,16 +1,14 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSub from '../../assets/images/logo_sub.png'
+import LogoS from '../../assets/images/j-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faJ } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="nav-bar">
     <Link className="logo" to="/">
-      <img src={LogoS} alt="logo" />
-      <img className="sub-logo" src={LogoSub} alt="logo" />
+      <FontAwesomeIcon icon={faJ} />
     </Link>
     <nav>
       <NavLink exact="true" activeclassname="active" to="/">
