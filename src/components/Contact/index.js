@@ -19,7 +19,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
+        'service_49uyswb',
         'contact_form',
         refForm.current,
         'MqmhjDEecuhMEVDgZ'
@@ -57,7 +57,7 @@ const Contact = () => {
                         <input type='text' name='name' placeholder='Name' required />
                     </li>
                     <li className='half'>
-                        <input type='text' name='email' placeholder='Email' required />
+                        <input type='email' name='email' placeholder='Email' required />
                     </li>
                     <li>
                         <input type='text' name='subject' placeholder='Subject' required />
@@ -71,6 +71,9 @@ const Contact = () => {
                 </ul>
             </form>
           </div>
+        </div>
+        <div className="pic">
+          <img src="" alt="me" />
         </div>
       </div>
       <Loader type="pacman" />
